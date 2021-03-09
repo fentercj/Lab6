@@ -3,7 +3,7 @@ class Tree{
   private String treeType;
   private boolean leavesFall;
   private String leafColor;
-
+  
   Tree(){
     treeName = "";
     treeType = "";
@@ -51,6 +51,11 @@ class Tree{
   }
 
 void print(){  
-  System.out.println("This is a " + treeName + " tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". It does not lose its leaves for the winter.");
+  if(leavesFall){
+    System.out.println("This is a " + treeName + " tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". It does lose its leaves for the winter.");
     }
+  else {
+    System.out.println("This is a " + treeName + " tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". It does not lose its leaves for the winter.");
+  }
+}
 }
